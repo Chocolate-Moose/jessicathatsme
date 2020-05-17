@@ -32,6 +32,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20px 0px 0px 60px;
+    color: #141712;
 }
 
 #subheading {
@@ -40,6 +41,7 @@ body {
     font-family: 'Hind Vadodara', sans-serif;
     font-weight: 500;
     padding: 5px 0px 0px 60px;
+    color: #141712;
 }
 
 #contact {
@@ -52,18 +54,34 @@ body {
     line-height: 1.75;
     letter-spacing: .3px;
     /* top right bottom left*/
-    padding: 15px 40px 0px 60px;
+    padding: 15px 60px 0px 60px;
+    color: #141712;
 }
 
 .fa {
     padding-right: 10px;
-    color: black;
+    color: #141712;
+}
+
+.fa:hover {
+    color: #719357;
 }
 
 h1, h4 {
     margin: 0px;
     padding: 0px;
 }
+
+/* for tablets */
+@media (max-width: 900px) {
+    #img-container {
+        display: none;
+    }
+    #text-container {
+        width: 100%;
+    }
+}
+
 
 /*
 #all-container {

@@ -82,46 +82,12 @@ h1, h4 {
     }
 }
 
-
-/*
-#all-container {
-    display: flex;
-    position: relative;
-    min-height: 100%;
-    min-width: 100%;
-    background-color: crimson;
+/* for smartphone portriat */
+@media only screen and (max-width : 375px) {
+    #img-container {
+        display: none;
+    }
+    #text-container {
+        width: 100%;
+    }
 }
-
-#img-container {
-    flex: 1;
-    height: 100%;
-    background-color: coral;
-}
-
-#text-container {
-    flex: 1;
-    height: 100%;
-    background-color: cadetblue;
-}
-
-
-
-#img-container {
-    width: 50%;
-    height: 100%;
-    float: left;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    background-color: coral;
-}
-
-#text-container {
-    margin-left: 50%;
-    width: 50%;
-    height: 100%;
-    float: right; 
-    position: fixed;
-    background-color: cadetblue;
-}
-*/

@@ -1,93 +1,161 @@
 /* this styling took an absolutely absurd amount of time */
 /* so please appreciate it! :) */
 
-body {
-    height: 100%;
-    margin: 0;
-}
-#all-container {
-    min-height: 100vh;
-    display: flex;
-}
+/* header styling */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-#img-container {
-    flex: 1;
-    min-height: 100%;
-}
-
-#text-container {
-    flex: 1;
-    min-height: 100%;
-    margin-top: 100px;
-}
-
-#img {
+header {
+    text-align: left;
+    position: fixed;
     width: 100%;
+    margin-top: 40px;
+    z-index: 999;
+}
+
+.logo {
+    margin: 4px;
+    margin-left: 30px;
+    width: 90px;
+    height: auto;
+}
+
+/* no checkbox needed for the toggle */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2em;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
 }
 
-#name {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 2px;
+/* make the hamburger */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #57A574;
+    height: 2px;
+    width: 1.2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 5px;
+}
+
+.nav-toggle-label span::after {
+    top: 5px;
+}
+/* ------------------ */
+
+nav {
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 200ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-right: 2em;
+}
+
+nav a {
+    font-family: 'Lato', sans-serif;
+    color: #7F7F7F;
+    text-decoration: none;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding: 20px 0px 0px 60px;
-    color: #141712;
+    opacity: 0;
+    transition: opacity 275ms ease-in-out;
 }
 
-#subheading {
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-family: 'Hind Vadodara', sans-serif;
-    font-weight: 500;
-    padding: 5px 0px 0px 60px;
-    color: #141712;
+nav a:hover {
+    color: #191919;
 }
 
-#contact {
-    padding: 10px 0px 0px 60px;
+/* if the toggle is checked, look for nav sibling */
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
 }
 
-#description {
-    font-family: 'Hind Vadodara', sans-serif;
-    font-size: 14px;
-    line-height: 1.75;
-    letter-spacing: .3px;
-    /* top right bottom left*/
-    padding: 15px 60px 0px 60px;
-    color: #141712;
+/* only have transition on open*/
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
 }
 
-.fa {
-    padding-right: 10px;
-    color: #141712;
-}
-
-.fa:hover {
-    color: #719357;
-}
-
-h1, h4 {
-    margin: 0px;
-    padding: 0px;
-}
-
-/* for tablets */
-@media (max-width: 900px) {
-    #img-container {
+/* nav bar appears without hamburger for larger screens */
+@media screen and (min-width: 780px) {
+    .nav-toggle-label {
         display: none;
     }
-    #text-container {
-        width: 100%;
+    header {
+        display: grid;
+        grid-template-columns: .25fr auto minmax(600px, 6fr) .5fr;
     }
-}
+    .logo {
+        grid-column: 2 / span 1;
+    }
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        margin-left: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        margin-bottom: 0;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    /* add lines on hover */
+    nav a::before {
+        content: '';
+        display: block;
+        height: 4px;
+        background: #57A574;
+        position: absolute;
+        bottom: -.4em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform ease-in-out 300ms;
+    }
 
-/* for smartphone portriat */
-@media only screen and (max-width : 375px) {
-    #img-container {
-        display: none;
-    }
-    #text-container {
-        width: 100%;
+    nav a:hover::before {
+        transform: scale(1, 1);
     }
 }

@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="icon" href="assets/favicon.ico">
 	<link rel = "stylesheet" href = "styles.css">
 	<title>Jessica, that's me!</title>
 </head>
@@ -10,15 +11,15 @@
 <body>
 	<!-- code modified from https://www.youtube.com/watch?v=8QKOaTYvYUA -->
 	<header>
-		<a href = "#"><img src = "assets/logo.svg" alt = "logo" class = "logo"></a>
+		<a href = "index.html"><img src = "assets/logo.svg" alt = "logo" class = "logo"></a>
 		<input type = "checkbox" id = "nav-toggle" class = "nav-toggle">
 
 		<nav>
 			<ul>
-				<li><a href = "#">About</a></li>
-				<li><a href = "#">Portfolio</a></li>
-				<li><a href = "#">Resume</a></li>
-				<li><a href = "#">Contact</a></li>
+				<li><a href = "pages/about.html">About</a></li>
+				<li><a href = "pages/portfolio.html">Portfolio</a></li>
+				<li><a href = "pages/resume.html">Resume</a></li>
+				<li><a href = "pages/contact.html">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -26,6 +27,13 @@
 			<span></span>
 		</label>
 	</header>
+
+	<div class = "typing-container">
+		<p>Hi!  I'm <span class = "typed-text"></span><span class = "cursor">&nbsp;</span></p>
+	</div>
+
+	<!-- code modified from https://www.youtube.com/watch?v=T4VE_6v9hFs -->
+	<script src = "typing.js"></script>
 </body>
 
 </html>

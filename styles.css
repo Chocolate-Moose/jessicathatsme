@@ -299,3 +299,84 @@ a:hover {
     color: #57A574;
 }
 /* END CONTACT PAGE STYLING */
+
+/* DATA PAGE STYLING */
+.fineance {
+    background-image: url("assets/fineance.jpg");
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.portfolio-box {
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* drop shadow to box */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+:after {
+    box-sizing: inherit;
+}
+
+/* make the box darken on hover */
+.portfolio-box:after {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+
+.portfolio-box:hover:after {
+    opacity: 1;
+}
+
+.hovertext {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    display: none;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.fineance-hovertext:after {
+    content: ""; 
+    display: block;
+    width: 70px; 
+    padding-top: 2px; 
+    border-bottom: 3px solid #57A574; 
+}
+
+.fineance:hover .hovertext{
+    display: block;
+}
+
+/* END DATA PAGE STYLING */

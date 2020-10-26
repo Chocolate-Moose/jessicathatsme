@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /* NAV BAR STYLING */
 
@@ -300,9 +302,26 @@ a:hover {
 }
 /* END CONTACT PAGE STYLING */
 
-/* DATA PAGE STYLING */
+/* PORTFOLIO PAGE STYLING */
 .fineance {
     background-image: url("assets/fineance.jpg");
+    left: 15%;
+}
+
+.blockparty {
+    background-image: url("assets/blockparty.png");
+    left: 40%;
+}
+
+.studibuddi {
+    background-image: url("assets/studibuddi.png");
+    left: 65%;
+}
+
+.mentormatch {
+    background-image: url("assets/mentormatch.png");
+    left: 40%;
+    top: 58%;
 }
 
 .portfolio-container {
@@ -317,6 +336,7 @@ a:hover {
     background-size: cover;
     height: 200px;
     width: 300px;
+    margin: 20px;
     border-radius: 2px;
     display: flex;
     flex-direction: row;
@@ -367,6 +387,7 @@ a:hover {
     z-index: 1;
 }
 
+/* adds green line under hover text */
 .fineance-hovertext:after {
     content: ""; 
     display: block;
@@ -375,8 +396,273 @@ a:hover {
     border-bottom: 3px solid #57A574; 
 }
 
+.blockparty-hovertext:after {
+    content: ""; 
+    display: block;
+    width: 100px; 
+    padding-top: 2px; 
+    border-bottom: 3px solid #57A574; 
+}
+
+.studibuddi-hovertext:after {
+    content: ""; 
+    display: block;
+    width: 100px; 
+    padding-top: 2px; 
+    border-bottom: 3px solid #57A574; 
+}
+
+.mentormatch-hovertext:after {
+    content: ""; 
+    display: block;
+    width: 120px; 
+    padding-top: 2px; 
+    border-bottom: 3px solid #57A574; 
+}
+
 .fineance:hover .hovertext{
     display: block;
 }
 
-/* END DATA PAGE STYLING */
+.blockparty:hover .hovertext{
+    display: block;
+}
+
+.studibuddi:hover .hovertext{
+    display: block;
+}
+
+.mentormatch:hover .hovertext{
+    display: block;
+}
+
+/* END PORTFOLIO PAGE STYLING */
+
+/* FINEANCE PAGE STYLING */
+
+/* END FINEANCE PAGE STYLING */
+
+/* GENERAL PROJECT PAGE STYLING */
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+.project-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.project-logo {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.project-bar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-right: 120px;
+    justify-content: space-evenly;
+}
+
+.project-container h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.project-bar h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.project-bar p {
+    font-size: 13px;
+    line-height: 2px;
+    text-align: center;
+}
+
+.project-writeup {
+    margin-top: 40px;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.project-more-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 900px;
+    text-align: center;
+    margin-top: 0px;
+}
+/* END GENERAL PROJECT PAGE STYLING */
+
+/* BLOCK PARTY PAGE STYLING */
+.blockparty-container h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #482B75;
+}
+
+.blockparty-bar {
+    background-color: #DCD8E3;
+}
+
+.blockparty-vid {
+    margin-left: 200px;
+}
+
+.blockparty-button {
+    background-color: #DCD8E3;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.blockparty-button p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.blockparty-button:hover {
+    background-color: #D5CAE3;
+}
+/* END BLOCK PARTY PAGE STYLING */
+
+/* MENTOR MATCH PAGE STYLING */
+.mentormatch-container h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #38220F;
+}
+
+.mentormatch-container h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.mentormatch-bar {
+    background-color: #E3DDD8;
+}
+
+.mentormatch-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.mentormatch-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.mentormatch-row img {
+    height: 150px;
+    width: auto;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.left-border {
+    border-left: thick solid gray;
+    padding-left: 15px;
+}
+
+.mentormatch-cols {
+    display: flex;
+    flex-direction: row;
+}
+
+.mentormatch-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mentormatch-col img {
+    height: 250px;
+    width: auto;
+    padding: 20px;
+}
+
+.mentormatch-screenshot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mentormatch-screenshot img {
+    height: 450px;
+    width: auto;
+}
+
+.mentormatch-button {
+    background-color: #E3DDD8;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.mentormatch-button p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.blockparty-button:hover {
+    background-color: #E3D6CA;
+}
+
+/* END MENTOR MATCH PAGE STYLING */
+
+/* FINEANCE PAGE STYLING */
+.fineance-container h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #449651;
+}
+
+.fineance-bar {
+    background-color: #D8E3D9;
+}
+
+.fineance-screenshots {
+    margin-left: 300px;
+    margin-right: 300px;
+    align-items: center;
+}
+
+.hihi {
+    height: 400px;
+    width: auto;
+}
+
+.h {
+    height: 500px;
+    width: auto;
+    margin: auto;
+}
+
+.fineance-button {
+    background-color: #D8E3D9;
+}
+
+.fineance-button p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.fineance-button:hover {
+    background-color: #CAE3CE;
+}
+/* END FINEANCE PAGE STYLING */

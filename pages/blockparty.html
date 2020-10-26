@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href = "../styles.css">
+	<title>Jessica, that's me!</title>
+</head>
+
+<body>
+	<header>
+		<a href = "../index.html"><img src = "../assets/logo.svg" alt = "logo" class = "logo"></a>
+		<input type = "checkbox" id = "nav-toggle" class = "nav-toggle">
+
+		<nav>
+			<ul>
+				<li><a href = "about.html">About</a></li>
+				<li><a class = "current" href = "portfolio.html">Portfolio</a></li>
+				<li><a href = "../assets/Jessica_Cheng_Resume.pdf" target = "_blank">Resume</a></li>
+				<li><a href = "contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<label for = "nav-toggle" class = "nav-toggle-label">
+			<span></span>
+		</label>
+	</header>
+	<div class = "project-container blockparty-container">
+        <div class = "project-title">
+            <img class = "project-logo" src = "../assets/blockpartylogo.png" alt = "record player">
+            <h1>Block Party</h1>
+        </div>
+        <h5>Welcome to the future of music</h5>
+        
+        <div class = "blockparty-bar project-bar">
+            <div class = "project-context">
+                <h3>Context</h3>
+                <p>Made for HobbyHacks 2020, my second hackathon</p>
+            </div>
+            <div class = "project-timeframe">
+                <h3>Time Frame</h3>
+                <p>48 consecutive, slightly panic-tinged hours</p>
+            </div>
+            <div class = "project-techstacks">
+                <h3>Tech Stacks</h3>
+                <p>React JS</p>
+                <p>Firebase</p>
+                <p>Youtube API</p>
+                <p>Radar.io</p>
+            </div>
+            <div class = "project-team">
+                <h3>Team</h3>
+                <p>Jessica Cheng - Designer, Front End Developer</p>
+                <p>Jennifer Guo - Designer, Back End Developer</p>
+            </div>
+        </div>
+        <div class = "project-writeup">
+            <p>After finally learning some basic frontend and backend during quarantine, I was really excited to enter HobbyHacks 2020
+                with my friend Jennifer and actually be able to bring our idea to life!  We decided to enter the music category and
+                build a webapp that allowed people to connect with friends and neighbors through music during quarantine.  Users can 
+                create rooms and invite their friends to listen to the same songs, at the same time.  Any member of the room can 
+                add a song to the queue for their friends to listen to.
+            </p>
+            <p>I designed all the frontend for our webapp in React, and also did some of the basic backend functionality as well 
+                through Google firebase.  This was my first project using React, so the chance to apply the skills
+                I had been learning was very exciting!!  I also used firebase in order to store the codes for each room, 
+                as well as store the list of people and songs in a given room.  This project won us the <b>Most Creative
+                Rader.io Hack</b>!
+            </p>
+            <iframe class = "blockparty-vid" width="560" height="315" src="https://www.youtube.com/embed/I7h_5HTbyYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class = "project-more-info">
+            <a target = "_blank" href = "https://ravedeejay.web.app/">
+                <div class = "blockparty-button">
+                    <p>Visit Block Party!</p>
+                </div>
+            </a>
+            <a target = "_blank" href = "https://devpost.com/software/deejay-e72z4o">
+                <div class = "blockparty-button">
+                    <p>Look at the devpost page</p>
+                </div>
+            </a>
+            <a target = "_blank" href = "https://github.com/jenxguo/deejay">
+                <div class = "blockparty-button">
+                    <p>See the source code</p>
+                </div>
+            </a>
+        </div>
+        
+
+    </div>
+	
+</body>
+
+</html>

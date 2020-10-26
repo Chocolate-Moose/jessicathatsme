@@ -1,10 +1,10 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Jessica", "a lost potato 🥔", "a baker 🍪", "an optimist 😊", "an opportunity-maker 🌟", "constantly looking for challenges 🧐", "currently learning Minecraft ⛏️"];
-const typingDelay = 150;
-const erasingDelay = 100;
-const newTextDelay = 2000;
+const textArray = ["Jessica", "a lost potato 🥔", "a baker 🍪", "an optimist 😊", "an opportunity-maker 🌟", "constantly looking for challenges 🧐", "interested in cybersecurity ⛏️"];
+const typingDelay = 100;
+const erasingDelay = 70;
+const newTextDelay = 1500;
 
 // keep track of current place in word and array
 let textArrayIndex = 0;

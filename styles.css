@@ -666,3 +666,28 @@ h5 {
     background-color: #CAE3CE;
 }
 /* END FINEANCE PAGE STYLING */
+
+/* STUDDIBUDDI PAGE STYLING */
+.studibuddi-container h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #BEA8ED;
+}
+
+.studibuddi-bar {
+    background-color: #DBD8E3;
+}
+
+.studibuddi-button {
+    background-color: #DBD8E3;
+}
+
+.studibuddi-button p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.studibuddi-button:hover {
+    background-color: #CAE3CE;
+}
+/* END STUDDIBUDDI PAGE STYLING */
